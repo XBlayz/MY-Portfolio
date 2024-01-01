@@ -1,3 +1,7 @@
+# v1.1
+Reformatted code with function structure.
+Can be used as a module by calling the function `roll_dice(cmd:str) -> any` for evaluating a dice command.
+
 # v1.0
 CLI interface command list:
 * **<n:int>d<m:int>[+<v:int>]**:
