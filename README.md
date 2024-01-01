@@ -18,8 +18,13 @@ A simple CLI interface capable of rolling dice using a simple command.
 [Changelog](./Dice%20Roller/CHANGELOG.md)
 
 ### [Initiative Tracker](./Initiative%20Tracker/initiative_tracker.py)
-...
+A simple CLI with a text table visualization of an initiative tracker for RPGs.
 
 #### Feature:
-- [ ] ...
+- [X] Table;
+- [X] Add, Remove, Set value and Next command;
+- [X] Reset command;
+- [X] Help command;
+- [X] Exit command;
+- [X] Roll die for initiative;
 [Changelog](./Initiative%20Tracker/CHANGELOG.md)
