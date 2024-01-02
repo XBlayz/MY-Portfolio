@@ -1,3 +1,6 @@
+# v1.2
+When rolling multiple dice display all the dice results.
+
 # v1.1
 Reformatted code with function structure.
 Can be used as a module by calling the function `roll_dice(cmd:str) -> any` for evaluating a dice command.

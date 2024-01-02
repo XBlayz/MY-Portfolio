@@ -34,7 +34,7 @@ def decode_cmd(cmd:str) -> dict[str, any]:
 
     # <n:int>d<m:int>[+<v:int>]
     else:
-        value = roll_dice(cmd)
+        value = roll_dice_list(cmd)
         if isinstance(value, str):
             return {"CMD": "__ERROR__", "Value": value}
         else:
@@ -75,6 +75,52 @@ def roll_dice(cmd:str) -> any:
         SEP = "'"
         return f"Invalid number '{e.args[0].split(SEP)[-2]}'"
 
+def roll_dice_list(cmd:str) -> any:
+    """Decode the string 'cmd' returning a list of the rolled value or the error message."""
+
+    try:
+        cmd_l = cmd.replace(" ", "").split("d")
+        if len(cmd_l) == 1:
+            raise(IndexError)
+
+        # Decode numbers
+        n = int(cmd_l[0])
+        if cmd_l[1].count("+") > 0:
+            mod_l = cmd_l[1].split("+")
+
+            m = int(mod_l[0])
+            r = [int(mod_l[1])]
+        else:
+            m = int(cmd_l[1])
+            r = []
+
+        # Calculate random numbers
+        for _ in range(n):
+            r.insert(0, random.randrange(1, m+1))
+
+        # Return result
+        return r
+
+    # Invalid command
+    except IndexError :
+        return f"'{cmd}' is an invalid command"
+    
+    # Invalid number
+    except ValueError as e:
+        SEP = "'"
+        return f"Invalid number '{e.args[0].split(SEP)[-2]}'"
+
+def print_dice(dice: list[int]) -> None:
+    r = 0
+    print("[", end="")
+    for i in range(len(dice)):
+        r += dice[i]
+        if i+1 < len(dice):
+            print(f"{dice[i]}+", end="")
+        else:
+            print(f"{dice[i]}] = ", end="")
+    print(f"{r}")
+
 def main() -> None:
     # Set random seed
     random.seed(datetime.now().timestamp())
@@ -96,7 +142,10 @@ def main() -> None:
                 os.system('cls')
                 break
             case "__DICE__":
-                print(cmd_dict["Value"])
+                if len(cmd_dict["Value"]) == 1:
+                    print(cmd_dict["Value"][0])
+                else:
+                    print_dice(cmd_dict["Value"])
             case "__ERROR__":
                 print(cmd_dict["Value"])
 
