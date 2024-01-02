@@ -26,7 +26,14 @@ A simple CLI with a text table visualization of an initiative tracker for RPGs.
 - [X] Table;
 - [X] Add, Remove, Set value and Next command;
 - [X] Reset command;
-- [X] Help command;
+- [ ] Help command;
 - [X] Exit command;
 - [X] Roll die for initiative;
 [Changelog](./Initiative%20Tracker/CHANGELOG.md)
+
+### [Password Generator](./Password%20Generator/password_generator.py)
+...
+
+#### Feature:
+- [ ] ...
+[Changelog](./Password%20Generator/CHANGELOG.md)
