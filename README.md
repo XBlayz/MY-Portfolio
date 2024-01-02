@@ -32,8 +32,10 @@ A simple CLI with a text table visualization of an initiative tracker for RPGs.
 [Changelog](./Initiative%20Tracker/CHANGELOG.md)
 
 ### [Password Generator](./Password%20Generator/password_generator.py)
-...
+Password generator terminal application using arguments for input.
 
 #### Feature:
-- [ ] ...
+- [X] Length;
+- [X] Uppercase;
+- [X] Special characters;
 [Changelog](./Password%20Generator/CHANGELOG.md)
