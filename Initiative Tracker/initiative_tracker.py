@@ -104,7 +104,7 @@ def sort_l(l:list) -> None:
         min_idx = s
 
         for i in range(s + 1, len(l)):
-            if l[i][1] < l[min_idx][1]:
+            if l[i][1] > l[min_idx][1]:
                 min_idx = i
 
         l[s], l[min_idx] = l[min_idx], l[s]

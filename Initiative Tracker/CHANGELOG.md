@@ -1,3 +1,6 @@
+# v1.0.1
+Fixed sorting.
+
 # v1.0
 Display the tracking table on top, waiting for command to execute and updating the table.
 CLI interface command list:
