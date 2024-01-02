@@ -3,7 +3,7 @@
 Can roll dice by interpreting command using a simple CLI interface.
 """
 
-__version__ = '1.1'
+__version__ = '1.3'
 __author__ = 'XBlayz'
 
 import os
