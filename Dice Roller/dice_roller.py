@@ -7,6 +7,7 @@ __version__ = '1.1'
 __author__ = 'XBlayz'
 
 import os
+import sys
 import random
 from datetime import datetime
 
@@ -150,4 +151,12 @@ def main() -> None:
                 print(cmd_dict["Value"])
 
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) > 2:
+        if sys.argv[1] == "-roll":
+            print(roll_dice(sys.argv[2]))
+        elif sys.argv[1] == "-roll-multi":
+            print_dice(roll_dice_list(sys.argv[2]))
+        else:
+            main()
+    else:
+        main()
