@@ -13,7 +13,7 @@ A simple CLI interface capable of rolling dice using a simple command.
 - [X] Exit command;
 - [X] Function;
 - [X] Multi dice roll history;
-- [ ] Argument execute command;
+- [X] Argument execute command;
 - [ ] Recursive command interpretation;
 - [ ] Adding math option;
 - [ ] Advantage roll;
