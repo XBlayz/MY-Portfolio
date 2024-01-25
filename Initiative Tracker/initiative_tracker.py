@@ -131,7 +131,7 @@ def serach_hp(l:list, item:any) -> None:
 def serach_ac(l:list, item:any) -> None:
     for pg in l:
         if pg[2] == item[0]:
-            pg[3] = item[1]
+            pg[4] = item[1]
             input("Done...")
             return
     input("Item not found...")

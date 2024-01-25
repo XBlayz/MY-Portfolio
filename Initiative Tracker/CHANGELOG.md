@@ -1,3 +1,6 @@
+# v1.0.2
+Fixed AC value editing error.
+
 # v1.0.1
 Fixed sorting.
 
