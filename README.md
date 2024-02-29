@@ -1,7 +1,10 @@
 # MY-Portfolio
 My personal developer portfolio.
 
-## List of applications
+---
+
+# List of applications
+## (PYTHON)
 ### -Terminal applications-
 #### [Dice Roller](./Dice%20Roller/dice_roller.py)
 A simple CLI interface capable of rolling dice using a simple command.
@@ -35,6 +38,17 @@ Password generator terminal application using arguments for input.
 [Changelog]()
 
 ### -Scripts-
+#### [...]()
+...
+
+##### Features ToDo:
+- [ ] ...
+[Changelog]()
+
+---
+
+## (JAVA)
+### -...-
 #### [...]()
 ...
 
