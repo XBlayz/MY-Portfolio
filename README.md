@@ -13,6 +13,7 @@ A simple CLI interface capable of rolling dice using a simple command.
 - [ ] Recursive command interpretation;
 - [ ] Adding math option;
 - [ ] Advantage roll;
+
 [Changelog](./Dice%20Roller/CHANGELOG.md)
 
 #### [Initiative Tracker](./Initiative%20Tracker/initiative_tracker.py)
@@ -20,6 +21,7 @@ A simple CLI with a text table visualization of an initiative tracker for RPGs.
 
 ##### Features ToDo:
 - [ ] Help command;
+
 [Changelog](./Initiative%20Tracker/CHANGELOG.md)
 
 #### [Password Generator](./Password%20Generator/password_generator.py)
@@ -27,6 +29,7 @@ Password generator terminal application using arguments for input.
 
 ##### Features ToDo:
 - [ ] ...
+
 [Changelog](./Password%20Generator/CHANGELOG.md)
 
 ### -GUI applications-
@@ -35,6 +38,7 @@ Password generator terminal application using arguments for input.
 
 ##### Features ToDo:
 - [ ] ...
+
 [Changelog]()
 
 ### -Scripts-
@@ -43,6 +47,7 @@ Password generator terminal application using arguments for input.
 
 ##### Features ToDo:
 - [ ] ...
+
 [Changelog]()
 
 ---
